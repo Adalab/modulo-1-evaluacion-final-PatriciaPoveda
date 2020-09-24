@@ -1,45 +1,120 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Adalab Web Starter Kit</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/css/main.css" />
-    <link rel="icon" href="./assets/images/favicon.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <title>Módulo 1 Evaluación Final</title>
   </head>
-
   <body>
-    <div class="page">
-      <header class="page__header">
-        <img src="./assets/images/logo-adalab.png" alt="Adalab">
-        <h1>Bienvenidos a Adalab</h1>
-      </header>
+    <header id="top" class="hero">
+      <button class="hero__menu" type="button" name="menu">
+        <a href="https://adalab.es/">
+          <img src="./assets/images/ico-menu.svg" alt="Menu"
+        /></a>
+      </button>
+      <div class="hero__header">
+      <h1 class="hero__header--title">anonymous proxy</h1>
+      <p class="hero__header--text">in hac habitase platea dictumst</p>
+      <button class="button-arrow" title="Ir a 3 Reasons to purchase">
+        <a href="#purchase">
+          <img src="./assets/images/ico-scroll-down.svg" alt="button to down"
+        /></a>
+      </div>
+      </button>
+    </header>
 
-      <main class="page__main">
-        <h2>Este es el starter kit de Adalab</h2>
-        <p>Lo usamos para aprender:</p>
-        <ul class="main__list">
-          <li>Sass</li>
-          <li>HTML partials</li>
-          <li>Gulp</li>
-          <li>y muchas cosas más</li>
-        </ul>
-      </main>
+    <main>
+      <section class="tip">
+        <h2 class="tip__title">Insomnia tips</h2>
+        <article class="tip__article">
+          <h3 class="tip__article--title">Looking through a window</h3>
+          <p class="tip__article--text">
+            Donec accumsan, nulla ut volutpat porttior, quem odio tempus felis, at
+            luctus ex diam nec lectus. Vivamus semper sodales rutrum.
+          </p>
+          <button
+            class="tip__button"
+            type="button"
+            title="Ir a Looking through a window"
+          >
+            go
+          </button>
+        </article>
+      </section>
 
-      <a class="link__adalab" href="https://adalab.es" target="_blank">Adalab</a>
+      <section id="purchase">
+        <h3>3 Reasons to purchase</h3>
+        <div>
+          <h4>Ut sed metus</h4>
+          <p>Lorem ipsum dolor sit amet, consecteur.</p>
+        </div>
+        <div>
+          <h4>Curabitur ac erat</h4>
+          <p>Mauris mattis urna quis lorem molestie.</p>
+        </div>
+        <div>
+          <h4>Morbi dictum</h4>
+          <p>Aliquam in dolor et dolor tincidunt.</p>
+        </div>
+        <button type="button" title="Ir a More reasons">More reasons</button>
+      </section>
 
-      <a class="link__github" href="https://github.com" target="_blank">GitHub</a>
+    </main>
 
-      <footer class="page__footer">
-        <small>
-          &copy; Todos los derechos reservados
-          <a class="link__adalab" href="https://adalab.es" target="_blank">Adalab</a>
+    <footer>
+      <button type="button" title="Ir a Inicio">
+        <a href="#top"
+          ><img src="./assets/images/ico-arrow.svg" alt="button to upload"
+        /></a>
+      </button>
+      <div>
+        <nav>
+          <li>
+            <a href="https://adalab.es/" title="Ir a Artículo"> Article</a>
+          </li>
+          <li>
+            <a href="https://adalab.es/" title="Ir a Libros">Books</a>
+          </li>
+          <li>
+            <a href="https://adalab.es/" title="Ir a Eventos">Events</a>
+          </li>
+          <li>
+            <a href="https://adalab.es/" title="Ir a Razones">Reasons</a>
+          </li>
+          <li>
+            <a href="https://adalab.es/" title="Ir a Consejos">Tips</a>
+          </li>
+        </nav>
+      </div>
+      <div>
+        <nav>
+          <li>
+            <a href="https://adalab.es/" title="Ir a Twitter" target="_blank"
+              >Twitter</a
+            >
+          </li>
+          <li>
+            <a href="https://adalab.es/" title="Ir a Instagram" target="_blank"
+              >Instagram</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://adalab.es/"
+              title="Ir a Mastodon.Social"
+              target="_blank"
+              >Mastodon.Social</a
+            >
+          </li>
+        </nav>
+      </div>
+      <small>&copy;2017 we <span>&#10084;</span> components</small>
+    </footer>
 
-        </small>
-      </footer>
-
-    </div>
-    <script src="./assets/js/main.js"></script>
   </body>
 </html>
