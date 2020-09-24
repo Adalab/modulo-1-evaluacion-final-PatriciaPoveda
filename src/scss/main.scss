@@ -3,36 +3,6 @@
 // @import 'components/links';
 // @import 'layout/page';
 @import "layout/header";
+@import "layout/tips";
 // @import 'layout/footer';
 // @import 'pages/index';
-
-.hero {
-  height: 100vh;
-  background: url(../images/cover.jpg);
-  background-size: cover;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.hero__menu {
-  position: fixed;
-  top: 0;
-  left: 0;
-  background-color: $buttonMenu;
-  width: 44px;
-  height: 44px;
-}
-.hero__header {
-  position: relative;
-  top: 10vh;
-  text-align: center;
-}
-.hero__header--title {
-  font-family: $fontTitle;
-  font-size: 42px;
-  color: $colorTextSecondary;
-}
-.hero__header--text {
-  color: $colorTextSecondary;
-}

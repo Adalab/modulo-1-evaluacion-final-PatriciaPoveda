@@ -1,0 +1,32 @@
+.tip {
+  padding: 30px 15px 45px 15px;
+}
+.tip__title {
+  color: $titleSection;
+  font-size: 14px;
+  font-weight: 400;
+}
+.tip__article--title {
+  font-family: $fontTitle;
+  color: $colorTextPrimary;
+  font-size: 24px;
+}
+.tip__article--text {
+  margin-top: 15px;
+  margin-bottom: 30px;
+  color: $colorTextArticle;
+  font-size: 18px;
+  font-weight: 400;
+}
+.tip__button {
+  height: 45px;
+  width: 76px;
+  border: solid 2px $button;
+  border-radius: 22.5px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 2.25;
+  text-transform: capitalize;
+  color: $button;
+  background-color: $colorTextSecondary;
+}
