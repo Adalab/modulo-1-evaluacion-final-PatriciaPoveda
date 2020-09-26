@@ -10,7 +10,7 @@
   text-align: center;
   position: relative;
 }
-.hero-menu {
+.hero-header-menu {
   position: fixed;
   top: 0;
   left: 0;
@@ -23,12 +23,12 @@
 .hero-menu:hover {
   background-color: #304268;
 }
-.hero-header {
+.hero-wrapper {
   color: $colorTextSecondary;
   position: absolute;
-  bottom: 53px;
+  bottom: 143px;
 }
-.hero-header__title {
+.hero-wrapper__title {
   font-family: $fontTitle;
   font-size: 42px;
   line-height: 1.31;
@@ -36,46 +36,52 @@
   text-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
   margin-bottom: 10px;
 }
-.hero-header__title--item {
+.hero-wrapper__title--item {
   display: block;
 }
-.hero-header__text {
+.hero-wrapper__text {
   font-size: 16px;
-  margin-bottom: 45px;
 }
 .hero-button {
   height: 45px;
   width: 45px;
   border-radius: 22.5px;
+  position: absolute;
+  bottom: 53px;
   transition: all ease 0.3s;
 }
-// .hero-button:hover {
-//   // transform: translate(0px, 5px);
-//   height: 47px;
-//   width: 47px;
-// }
+.hero-button:hover {
+  transform: translate(0px, 10px);
+  height: 49px;
+  width: 49px;
+}
 @media all and (min-width: 768px) {
-  .hero-header {
-    bottom: 45px;
+  .hero-wrapper {
+    bottom: 120px;
   }
-  .hero-header__title {
+  .hero-wrapper__title {
     font-size: 80px;
     line-height: 1.33;
     margin-bottom: 20px;
   }
-  .hero-header__text {
+  .hero-wrapper__text {
     font-size: 24px;
-    margin-bottom: 30px;
+  }
+  .hero-button {
+    bottom: 45px;
   }
 }
 @media all and (min-width: 1200px) {
-  .hero-header {
-    bottom: 13px;
+  .hero-wrapper {
+    bottom: 88px;
   }
-  .hero-header__title {
+  .hero-wrapper__title {
     font-size: 100px;
     line-height: 1.32;
     text-shadow: 0 2px 5px $colorshadow;
     margin-bottom: 0px;
+  }
+  .hero-button {
+    bottom: 13px;
   }
 }
