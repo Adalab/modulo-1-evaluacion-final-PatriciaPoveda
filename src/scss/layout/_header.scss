@@ -18,6 +18,10 @@
   border: $buttonMenu;
   width: 44px;
   height: 44px;
+  transition: background-color ease 0.5s;
+}
+.hero-menu:hover {
+  background-color: #304268;
 }
 .hero-header {
   color: $colorTextSecondary;
@@ -43,7 +47,13 @@
   height: 45px;
   width: 45px;
   border-radius: 22.5px;
+  transition: all ease 0.3s;
 }
+// .hero-button:hover {
+//   // transform: translate(0px, 5px);
+//   height: 47px;
+//   width: 47px;
+// }
 @media all and (min-width: 768px) {
   .hero-header {
     bottom: 45px;

@@ -6,11 +6,13 @@
   font-size: 14px;
   line-height: 2.14;
   font-weight: 400;
+  text-transform: capitalize;
 }
 .tip__article--title {
   font-family: $fontTitle;
   font-size: 24px;
   line-height: 1.25;
+  text-transform: capitalize;
 }
 .tip__article--text {
   margin-top: 15px;
@@ -28,9 +30,13 @@
   font-size: 20px;
   font-weight: 500;
   line-height: 2.25;
-  text-transform: capitalize;
   color: $button;
   background-color: $colorTextSecondary;
+  transition: all ease 0.5s;
+}
+.tip-button:hover {
+  background-color: #f26002;
+  color: #ffffff;
 }
 @media all and (min-width: 768px) {
   .tip {

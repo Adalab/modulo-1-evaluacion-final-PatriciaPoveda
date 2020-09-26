@@ -23,6 +23,14 @@
   text-transform: uppercase;
   list-style-type: none;
 }
+.menu-container__list--item {
+  transition: all ease 0.5s;
+}
+.menu-container__list--item:hover {
+  font-size: 18px;
+  font-weight: 500;
+  color: #f26002;
+}
 .menu-container__copy {
   font-size: 14px;
   line-height: 2.14;
@@ -32,6 +40,10 @@
 }
 .menu-container__copy--heart {
   color: red;
+  transition: font-size ease 0.5s;
+}
+.menu-container__copy--heart:hover {
+  font-size: 20px;
 }
 @media all and (min-width: 768px) {
   .menu-container {
