@@ -4,12 +4,13 @@
 .tip__title {
   color: $titleSection;
   font-size: 14px;
+  line-height: 2.14;
   font-weight: 400;
 }
 .tip__article--title {
   font-family: $fontTitle;
-  color: $colorTextPrimary;
   font-size: 24px;
+  line-height: 1.25;
 }
 .tip__article--text {
   margin-top: 15px;
@@ -17,8 +18,9 @@
   color: $colorTextArticle;
   font-size: 18px;
   font-weight: 400;
+  line-height: 1.67;
 }
-.tip__button {
+.tip-button {
   height: 45px;
   width: 76px;
   border: solid 2px $button;
@@ -29,4 +31,33 @@
   text-transform: capitalize;
   color: $button;
   background-color: $colorTextSecondary;
+}
+@media all and (min-width: 768px) {
+  .tip {
+    padding: 30px 39px 60px 39px;
+  }
+  .tip__article--title {
+    font-size: 26px;
+    line-height: 1.73;
+  }
+  .tip__article--text {
+    margin-top: 30px;
+    font-size: 20px;
+    line-height: 1.5;
+  }
+}
+@media all and (min-width: 1200px) {
+  .tip {
+    margin: auto;
+    padding: 60px 0;
+    max-width: 730px;
+  }
+  .tip__title {
+    font-size: 16px;
+    line-height: 1.88;
+  }
+  .tip__article--title {
+    font-size: 32px;
+    line-height: 1.41;
+  }
 }

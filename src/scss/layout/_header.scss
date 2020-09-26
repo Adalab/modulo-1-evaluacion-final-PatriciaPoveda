@@ -1,14 +1,14 @@
 .hero {
-  // height: 100vh;
+  height: 100vh;
   background-image: url(../images/cover.jpg);
-  background-size: 100vh;
-  background-repeat: no-repeat;
+  background-size: cover;
   background-position: top;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
+  position: relative;
 }
 .hero-menu {
   position: fixed;
@@ -21,8 +21,8 @@
 }
 .hero-header {
   color: $colorTextSecondary;
-  // height: 100vh;
-  // top: 50vh;
+  position: absolute;
+  bottom: 53px;
 }
 .hero-header__title {
   font-family: $fontTitle;
@@ -45,12 +45,27 @@
   border-radius: 22.5px;
 }
 @media all and (min-width: 768px) {
+  .hero-header {
+    bottom: 45px;
+  }
   .hero-header__title {
     font-size: 80px;
     line-height: 1.33;
+    margin-bottom: 20px;
   }
   .hero-header__text {
     font-size: 24px;
-    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+}
+@media all and (min-width: 1200px) {
+  .hero-header {
+    bottom: 13px;
+  }
+  .hero-header__title {
+    font-size: 100px;
+    line-height: 1.32;
+    text-shadow: 0 2px 5px $colorshadow;
+    margin-bottom: 0px;
   }
 }
