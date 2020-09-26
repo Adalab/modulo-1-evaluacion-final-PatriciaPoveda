@@ -1,79 +1,70 @@
 .purchase {
   background-color: $backgroundReasons;
   text-align: center;
-}
-.purchase__title {
-  padding: 30px 15px 0px 15px;
-  font-family: $fontTitle;
-  font-size: 24px;
-  line-height: 1.25;
-  text-transform: capitalize;
-  @media all and (min-width: 768px) {
-    // .purchase__title {
-    padding: 30px 160px 0 160px;
-    font-size: 26px;
-    line-height: 1.73;
-  }
-  @media all and (min-width: 1200px) {
-    // .purchase__title {
-    padding: 60px 275px 0 275px;
-    font-size: 32px;
-    line-height: 1.41;
-  }
-}
-.purchase-wrapper {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr;
-  padding: 45px 70px;
-  gap: 45px;
-  @media all and (min-width: 768px) {
-    // .purchase-wrapper {
-    padding: 45px 40px 60px 35.7px;
-    gap: 27.7px;
-  }
-  @media all and (min-width: 1200px) {
-    // .purchase-wrapper {
-    padding: 45px 85px 60px 81.2px;
-    gap: 26.2px;
-  }
-  &__article {
-    grid-column: 1 / 4;
-    &.item1 {
-      @media all and (min-width: 768px) {
-        // .item1 {
-        grid-column: 1 / 2;
-      }
+  &__title {
+    padding: 30px 15px 0px 15px;
+    font-family: $fontTitle;
+    font-size: 24px;
+    line-height: 1.25;
+    text-transform: capitalize;
+    @media all and (min-width: 768px) {
+      padding: 30px 160px 0 160px;
+      font-size: 26px;
+      line-height: 1.73;
     }
-    &.item2 {
-      @media all and (min-width: 768px) {
-        // .item2 {
-        grid-column: 2 / 3;
-      }
+    @media all and (min-width: 1200px) {
+      padding: 60px 275px 0 275px;
+      font-size: 32px;
+      line-height: 1.41;
     }
-    &.item3 {
-      @media all and (min-width: 768px) {
-        // .item3 {
-        grid-column: 3 / 4;
-      }
+  }
+  &-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    padding: 45px 70px;
+    gap: 45px;
+    @media all and (min-width: 768px) {
+      padding: 45px 40px 60px 35.7px;
+      gap: 27.7px;
     }
-    &--title {
-      font-family: $fontTitle;
-      font-size: 18px;
-      line-height: 1.67;
-      @media all and (min-width: 768px) {
-        // .purchase-wrapper__article--title {
-        font-size: 24px;
-        line-height: 1.25;
-      }
+    @media all and (min-width: 1200px) {
+      padding: 45px 85px 60px 81.2px;
+      gap: 26.2px;
     }
-    &--text {
-      font-size: 18px;
-      line-height: 1.67;
-      @media all and (min-width: 768px) {
-        // .purchase-wrapper__article--text {
-        font-size: 20px;
-        line-height: 1.5;
+    &__article {
+      grid-column: 1 / 4;
+      &.item1 {
+        @media all and (min-width: 768px) {
+          grid-column: 1 / 2;
+        }
+      }
+      &.item2 {
+        @media all and (min-width: 768px) {
+          grid-column: 2 / 3;
+        }
+      }
+      &.item3 {
+        @media all and (min-width: 768px) {
+          grid-column: 3 / 4;
+        }
+      }
+      &--title {
+        font-family: $fontTitle;
+        font-size: 18px;
+        line-height: 1.67;
+        @media all and (min-width: 768px) {
+          font-size: 24px;
+          line-height: 1.25;
+        }
+      }
+      &--text {
+        font-size: 18px;
+        line-height: 1.67;
+        @media all and (min-width: 768px) {
+          font-size: 20px;
+          line-height: 1.5;
+        }
       }
     }
   }
@@ -89,64 +80,15 @@
   line-height: 2.25;
   color: $colorTextSecondary;
   margin-bottom: 60px;
-  // text-transform: capitalize;
   transition: background-color ease 0.5s;
   &:hover {
     background-color: #304268;
   }
   @media all and (min-width: 768px) {
-    // .purchase__button {
     width: 210px;
   }
   @media all and (min-width: 1200px) {
-    // .purchase__button {
     width: 255px;
     text-transform: capitalize;
   }
 }
-// @media all and (min-width: 768px) {
-//   .purchase__title {
-//     padding: 30px 160px 0 160px;
-//     font-size: 26px;
-//     line-height: 1.73;
-//   }
-//   .purchase-wrapper {
-//     padding: 45px 40px 60px 35.7px;
-//     gap: 27.7px;
-//   }
-//   .purchase-wrapper__article--title {
-//     font-size: 24px;
-//     line-height: 1.25;
-//   }
-//   .purchase-wrapper__article--text {
-//     font-size: 20px;
-//     line-height: 1.5;
-//   }
-//   .item1 {
-//     grid-column: 1 / 2;
-//   }
-//   .item2 {
-//     grid-column: 2 / 3;
-//   }
-//   .item3 {
-//     grid-column: 3 / 4;
-//   }
-//   .purchase__button {
-//     width: 210px;
-//   }
-// }
-// @media all and (min-width: 1200px) {
-//   .purchase__title {
-//     padding: 60px 275px 0 275px;
-//     font-size: 32px;
-//     line-height: 1.41;
-//   }
-//   .purchase-wrapper {
-//     padding: 45px 85px 60px 81.2px;
-//     gap: 26.2px;
-//   }
-//   .purchase__button {
-//     width: 255px;
-//     text-transform: capitalize;
-//   }
-// }
