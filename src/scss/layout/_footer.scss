@@ -5,11 +5,24 @@
   transform: translateY(-19px);
   border-color: $colorTextSecondary;
   box-shadow: 0 2px 4px $colorshadow;
+  &:hover {
+    animation-name: menu-button;
+    animation-duration: 0.3s;
+    animation-iteration-count: 1;
+  }
+  @keyframes menu-button {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
 }
 .menu {
   background-color: $backgroundFooter;
   text-align: center;
-  &-container {
+  &-wrapper {
     color: $colorTextSecondary;
     display: flex;
     flex-direction: column;
@@ -35,7 +48,7 @@
         margin-left: 30px;
       }
       &--item {
-        transition: all ease 0.5s;
+        transition: all ease 0.3s;
         &:hover {
           font-size: 18px;
           font-weight: 500;

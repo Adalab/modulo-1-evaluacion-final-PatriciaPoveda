@@ -6,7 +6,7 @@
   border: $buttonMenu;
   width: 44px;
   height: 44px;
-  transition: background-color ease 0.5s;
+  transition: background-color ease 0.3s;
   &:hover {
     background-color: #304268;
   }
@@ -39,6 +39,19 @@
       text-transform: uppercase;
       text-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
       margin-bottom: 10px;
+      animation-name: __title;
+      animation-duration: 5s;
+      animation-iteration-count: 1;
+      @keyframes __title {
+        from {
+          opacity: 0;
+          transform: translateY(-80px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0px);
+        }
+      }
       @media all and (min-width: 768px) {
         font-size: 80px;
         line-height: 1.33;
