@@ -19,28 +19,48 @@
   width: 44px;
   height: 44px;
   transition: background-color ease 0.5s;
-}
-.hero-menu:hover {
-  background-color: #304268;
+  &:hover {
+    background-color: #304268;
+  }
 }
 .hero-wrapper {
   color: $colorTextSecondary;
   position: absolute;
   bottom: 143px;
-}
-.hero-wrapper__title {
-  font-family: $fontTitle;
-  font-size: 42px;
-  line-height: 1.31;
-  text-transform: uppercase;
-  text-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
-  margin-bottom: 10px;
-}
-.hero-wrapper__title--item {
-  display: block;
-}
-.hero-wrapper__text {
-  font-size: 16px;
+  @media all and (min-width: 768px) {
+    bottom: 120px;
+  }
+  @media all and (min-width: 1200px) {
+    bottom: 88px;
+  }
+  &__title {
+    font-family: $fontTitle;
+    font-size: 42px;
+    line-height: 1.31;
+    text-transform: uppercase;
+    text-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+    margin-bottom: 10px;
+    @media all and (min-width: 768px) {
+      font-size: 80px;
+      line-height: 1.33;
+      margin-bottom: 20px;
+    }
+    @media all and (min-width: 1200px) {
+      font-size: 100px;
+      line-height: 1.32;
+      text-shadow: 0 2px 5px $colorshadow;
+      margin-bottom: 0px;
+    }
+    &--item {
+      display: block;
+    }
+  }
+  &__text {
+    font-size: 16px;
+    @media all and (min-width: 768px) {
+      font-size: 24px;
+    }
+  }
 }
 .hero-button {
   height: 45px;
@@ -49,39 +69,46 @@
   position: absolute;
   bottom: 53px;
   transition: all ease 0.3s;
-}
-.hero-button:hover {
-  transform: translate(0px, 10px);
-  height: 49px;
-  width: 49px;
-}
-@media all and (min-width: 768px) {
-  .hero-wrapper {
-    bottom: 120px;
+  &:hover {
+    transform: translate(0px, 10px);
+    height: 49px;
+    width: 49px;
   }
-  .hero-wrapper__title {
-    font-size: 80px;
-    line-height: 1.33;
-    margin-bottom: 20px;
-  }
-  .hero-wrapper__text {
-    font-size: 24px;
-  }
-  .hero-button {
+  @media all and (min-width: 768px) {
     bottom: 45px;
   }
-}
-@media all and (min-width: 1200px) {
-  .hero-wrapper {
-    bottom: 88px;
-  }
-  .hero-wrapper__title {
-    font-size: 100px;
-    line-height: 1.32;
-    text-shadow: 0 2px 5px $colorshadow;
-    margin-bottom: 0px;
-  }
-  .hero-button {
+  @media all and (min-width: 1200px) {
     bottom: 13px;
   }
 }
+
+// @media all and (min-width: 768px) {
+// .hero-wrapper {
+//   bottom: 120px;
+// }
+// .hero-wrapper__title {
+//   font-size: 80px;
+//   line-height: 1.33;
+//   margin-bottom: 20px;
+// }
+// .hero-wrapper__text {
+//   font-size: 24px;
+// }
+//   .hero-button {
+//     bottom: 45px;
+//   }
+// }
+// @media all and (min-width: 1200px) {
+// .hero-wrapper {
+//   bottom: 88px;
+// }
+// .hero-wrapper__title {
+//   font-size: 100px;
+//   line-height: 1.32;
+//   text-shadow: 0 2px 5px $colorshadow;
+//   margin-bottom: 0px;
+// }
+//   .hero-button {
+//     bottom: 13px;
+//   }
+// }

@@ -1,5 +1,15 @@
 .tip {
   padding: 30px 15px 45px 15px;
+  @media all and (min-width: 768px) {
+    // .tip {
+    padding: 30px 39px 60px 39px;
+  }
+  @media all and (min-width: 1200px) {
+    // .tip {
+    margin: auto;
+    padding: 60px 0;
+    max-width: 730px;
+  }
 }
 .tip__title {
   color: $titleSection;
@@ -7,21 +17,45 @@
   line-height: 2.14;
   font-weight: 400;
   text-transform: capitalize;
+  @media all and (min-width: 1200px) {
+    // .tip__title {
+    font-size: 16px;
+    line-height: 1.88;
+  }
 }
-.tip__article--title {
-  font-family: $fontTitle;
-  font-size: 24px;
-  line-height: 1.25;
-  text-transform: capitalize;
+.tip__article {
+  &--title {
+    font-family: $fontTitle;
+    font-size: 24px;
+    line-height: 1.25;
+    text-transform: capitalize;
+    @media all and (min-width: 768px) {
+      // .tip__article--title {
+      font-size: 26px;
+      line-height: 1.73;
+    }
+    @media all and (min-width: 1200px) {
+      // .tip__article--title {
+      font-size: 32px;
+      line-height: 1.41;
+    }
+  }
+  &--text {
+    margin-top: 15px;
+    margin-bottom: 30px;
+    color: $colorTextArticle;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.67;
+    @media all and (min-width: 768px) {
+      // .tip__article--text {
+      margin-top: 30px;
+      font-size: 20px;
+      line-height: 1.5;
+    }
+  }
 }
-.tip__article--text {
-  margin-top: 15px;
-  margin-bottom: 30px;
-  color: $colorTextArticle;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 1.67;
-}
+
 .tip-button {
   height: 45px;
   width: 76px;
@@ -33,37 +67,44 @@
   color: $button;
   background-color: $colorTextSecondary;
   transition: all ease 0.5s;
-}
-.tip-button:hover {
-  background-color: #f26002;
-  color: #ffffff;
-}
-@media all and (min-width: 768px) {
-  .tip {
-    padding: 30px 39px 60px 39px;
+  &:hover {
+    background-color: #f26002;
+    color: #ffffff;
   }
-  .tip__article--title {
-    font-size: 26px;
-    line-height: 1.73;
+  @media all and (min-width: 768px) {
+    width: 91px;
   }
-  .tip__article--text {
-    margin-top: 30px;
-    font-size: 20px;
-    line-height: 1.5;
+  @media all and (min-width: 1200px) {
+    width: 160px;
   }
 }
-@media all and (min-width: 1200px) {
-  .tip {
-    margin: auto;
-    padding: 60px 0;
-    max-width: 730px;
-  }
-  .tip__title {
-    font-size: 16px;
-    line-height: 1.88;
-  }
-  .tip__article--title {
-    font-size: 32px;
-    line-height: 1.41;
-  }
-}
+
+// @media all and (min-width: 768px) {
+// .tip {
+//   padding: 30px 39px 60px 39px;
+// }
+// .tip__article--title {
+//   font-size: 26px;
+//   line-height: 1.73;
+// }
+//   .tip__article--text {
+//     margin-top: 30px;
+//     font-size: 20px;
+//     line-height: 1.5;
+//   }
+// }
+// @media all and (min-width: 1200px) {
+//   // .tip {
+//   //   margin: auto;
+//   //   padding: 60px 0;
+//   //   max-width: 730px;
+//   // }
+//   // .tip__title {
+//   //   font-size: 16px;
+//   //   line-height: 1.88;
+//   // }
+//   .tip__article--title {
+//     font-size: 32px;
+//     line-height: 1.41;
+//   }
+// }
