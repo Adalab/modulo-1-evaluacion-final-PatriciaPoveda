@@ -49,6 +49,8 @@
       }
       &--item {
         transition: all ease 0.3s;
+        color: $colorTextSecondary;
+        text-decoration: none;
         &:hover {
           font-size: 18px;
           font-weight: 500;
