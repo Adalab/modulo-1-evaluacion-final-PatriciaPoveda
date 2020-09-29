@@ -72,17 +72,19 @@
 .purchase__button {
   height: 45px;
   width: 184px;
-  background-color: $button;
-  border: $button;
+  background-color: $colorTextSecondary;
+  border: solid 2px $button;
   border-radius: 22.5px;
   font-size: 20px;
   font-weight: 500;
   line-height: 2.25;
-  color: $colorTextSecondary;
+  color: $button;
   margin-bottom: 60px;
+  margin-top: 20px;
   transition: background-color ease 0.3s;
   &:hover {
-    background-color: #304268;
+    background-color: #f26002;
+    color: #ffffff;
   }
   @media all and (min-width: 768px) {
     width: 210px;

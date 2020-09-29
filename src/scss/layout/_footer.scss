@@ -1,4 +1,5 @@
 .menu-button {
+  display: none;
   height: 45px;
   width: 45px;
   border-radius: 22.5px;
@@ -17,6 +18,15 @@
     to {
       transform: rotate(360deg);
     }
+  }
+  @media all and (min-width: 768px) {
+    display: inline-block;
+    height: 45px;
+    width: 45px;
+    border-radius: 22.5px;
+    transform: translateY(-19px);
+    border-color: $colorTextSecondary;
+    box-shadow: 0 2px 4px $colorshadow;
   }
 }
 .menu {
@@ -62,7 +72,7 @@
       font-size: 14px;
       line-height: 2.14;
       @media all and (min-width: 768px) {
-        order: -1;
+        order: 2;
       }
       &--item {
         display: block;
