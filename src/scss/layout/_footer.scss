@@ -1,21 +1,25 @@
-.menu-button {
-  height: 45px;
-  width: 45px;
-  border-radius: 22.5px;
-  transform: translateY(-19px);
-  border-color: $colorTextSecondary;
-  box-shadow: 0 2px 4px $colorshadow;
-  &:hover {
-    animation-name: menu-button;
-    animation-duration: 0.3s;
-    animation-iteration-count: 1;
-  }
-  @keyframes menu-button {
-    from {
-      transform: rotate(0deg);
+.menu-link {
+  position: relative;
+  top: -19px;
+  &__button {
+    height: 45px;
+    width: 45px;
+    border-radius: 22.5px;
+    border-color: $colorTextSecondary;
+    box-shadow: 0 2px 4px $colorshadow;
+    cursor: pointer;
+    &:hover {
+      animation-name: menu-button;
+      animation-duration: 0.3s;
+      animation-iteration-count: 1;
     }
-    to {
-      transform: rotate(360deg);
+    @keyframes menu-button {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
     }
   }
 }
@@ -69,6 +73,7 @@
       }
       &--heart {
         color: red;
+        cursor: default;
         transition: font-size ease 0.5s;
         &:hover {
           font-size: 30px;
